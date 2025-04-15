@@ -20,7 +20,7 @@ function setup() {
   cdpCheckbox.position(20, 170);
 
   qdpOsc = new p5.Oscillator('sine');
-  qdpOsc.amp(0); // Set to silent initially
+  qdpOsc.amp(0);
   qdpOsc.start();
 
   cdpOsc = new p5.Oscillator('sine');
@@ -60,7 +60,6 @@ function draw() {
   }
 }
 
-// ⬇️ THIS IS CRITICAL FOR AUDIO TO START
 function mousePressed() {
-  userStartAudio();
+  userStartAudio(); // Required for audio to start in browser
 }
