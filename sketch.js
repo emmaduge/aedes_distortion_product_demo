@@ -55,4 +55,7 @@ function draw() {
   } else {
     cdpOsc.amp(0, 0.1);
   }
+  function mousePressed() {
+  userStartAudio(); // Required to unlock audio in modern browsers
+}
 }
